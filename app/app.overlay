@@ -1,0 +1,12 @@
+/ {
+    aliases {
+        user-led = &green_led_2;
+    };
+
+    leds: leds {
+        white_led: white_led {
+            gpios = <&gpioa 0x6 GPIO_ACTIVE_LOW>;
+			label = "External LED";
+        };
+    };
+};
